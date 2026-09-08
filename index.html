@@ -9,12 +9,9 @@
 <body>
 
     <h1>Cloud Services - Week 3</h1>
-    <h2>Media from CSC Allas</h2>
     
-    <img src="https://a3s.fi/swift/v1/cloud-services-week3-media/Captura%20de%20pantalla%202026-09-08%20132258.png"
-         alt="Cloud Services Week 3"
-         width="700">
-    
+    <h2> QUESTIONS AND ANSWERS </h2>
+
     <h2>•	Describe reasons why so many (most?) companies are using cloud based email and calendar services</h2>
     <p>The use of cloud-based services such as email and calendars offers many advantages for today’s businesses, such as accessibility: it is much easier to access these services from different devices, meaning they can be used at any time. Furthermore, there is scalability, which allows you to tailor costs, speed and storage to your needs, thereby avoiding the waste of resources, as well as eliminating the initial infrastructure costs, such as hardware and system maintenance.</p>
 
@@ -27,7 +24,59 @@
     <h2>•	Describe reasons, why many IoT devices (internet connected home appliances, Smart-TVs and such) are using Google's 8.8.8.8 or some other public DNS resolvers?</h2>
     <p>IoT devices use 8.8.8.8 to ensure they can always connect to their servers, thereby avoiding the frequent failures and outages of local internet service providers’ DNS servers. Furthermore, configuring a standard public DNS globally enables manufacturers to simplify technical support and circumvent security blocks on home routers that might prevent their applications from functioning.</p>
 
+    <h2>Sources</h2>
+    
+    <p>
+        IBM – IaaS, PaaS and SaaS:
+        <a href="https://www.ibm.com/es-es/think/topics/iaas-paas-saas" target="_blank">
+            https://www.ibm.com/es-es/think/topics/iaas-paas-saas
+        </a>
+    </p>
+    
+    <p>
+        Medium – Advantages of cloud-based email:
+        <a href="https://medium.com/future-nexus/ventajas-de-la-soluci%C3%B3n-de-correo-electr%C3%B3nico-basada-en-la-nube-9197cb4d8db8" target="_blank">
+            https://medium.com/future-nexus/ventajas-de-la-soluci%C3%B3n-de-correo-electr%C3%B3nico-basada-en-la-nube-9197cb4d8db8
+        </a>
+    </p>
+    
+    <p>
+        Reddit – Discussion about Microsoft services in large companies:
+        <a href="https://www.reddit.com/r/work/comments/1io5wes/why_do_almost_all_big_companies_use_microsoft/?tl=es-419" target="_blank">
+            https://www.reddit.com/r/work/comments/1io5wes/why_do_almost_all_big_companies_use_microsoft/
+        </a>
+    </p>
+    
+    <p>
+        CaptainDNS – Google Public DNS 8.8.8.8:
+        <a href="https://www.captaindns.com/es/blog/dns-8888-google" target="_blank">
+            https://www.captaindns.com/es/blog/dns-8888-google
+        </a>
+    </p>
+        
+    <h2> Practical description </h2>
 
+    <p> For the practical part, I used CSC Rahti to deploy a static web page. The HTML code is stored in a GitHub repository, and Rahti uses that repository to build and publish the application. I then used CSC Allas as object storage to save an image. I created a bucket, uploaded the image and enabled public access so that I could use its URL within the web page. Finally, I checked that the webpage deployed on Rahti could load the image stored in Allas correctly.</p>
+
+    
+        <img src="https://allas.csc.fi/preview/c06ca90e7b964f699ad91842dd7b28c8/cloud-services-week3-media/Captura%20de%20pantalla%202026-09-08%20135350.png"
+             alt="Rahti deployment"
+             width="800">
+
+        <img src="https://allas.csc.fi/preview/c06ca90e7b964f699ad91842dd7b28c8/cloud-services-week3-media/Captura%20de%20pantalla%202026-09-08%20135333.png"
+             alt="Rahti deployment"
+             width="800">
+    
+        <h2>Media from CSC Allas</h2>
+    
+        <img src="https://a3s.fi/swift/v1/cloud-services-week3-media/Captura%20de%20pantalla%202026-09-08%20132258.png"
+             alt="Cloud Services Week 3"
+             width="700">
+
+    <h2>Final Conclusion </h2>
+        <p> Through this exercise, I gained a better understanding of how different cloud services can work together. On the one hand, I used Rahti to deploy the website and, on the other, Allas to store the images. This helped me gain a practical understanding of the difference between a PaaS service and an object storage service. I also learnt how to make a web application use resources stored on another service via public links. </p>
+   
+    
     <p>Fiamma Chouciño</p>
 </body>
 </html>
